@@ -27,7 +27,8 @@ namespace KazanSession1Api_31_07_2020.Controllers
             return Json(assets.ToList());
         }
 
-        // GET: Assets/Details/5
+        // POST: Assets/Details/5
+        [HttpPost]
         public ActionResult Details(long? id)
         {
             if (id == null)
@@ -39,7 +40,7 @@ namespace KazanSession1Api_31_07_2020.Controllers
             {
                 return HttpNotFound();
             }
-            return View(asset);
+            return Json(asset);
         }
 
         // POST: Assets/Create
@@ -76,6 +77,19 @@ namespace KazanSession1Api_31_07_2020.Controllers
             return Json(getCustomView.ToList());
         }
 
+        // POST: Assets/GetUniqueSN
+        [HttpPost]
+        public ActionResult GetUniqueSN()
+        {
+            var list = new List<string>();
+            list = (from x in db.Assets
+                    select x.AssetSN).ToList();
+            list.AddRange((from x in db.AssetTransferLogs
+                           select x.FromAssetSN).ToList());
+            list.AddRange((from x in db.AssetTransferLogs
+                           select x.ToAssetSN).ToList());
+            return Json(list.Distinct());
+        }
 
         // POST: Assets/Edit/5
         [HttpPost]
