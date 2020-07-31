@@ -140,7 +140,9 @@
     <Compile Include="AssetTransferLog.cs">
       <DependentUpon>Session1Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\AssetGroupsController.cs" />
     <Compile Include="Controllers\AssetsController.cs" />
+    <Compile Include="Controllers\DepartmentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Department.cs">
       <DependentUpon>Session1Model.tt</DependentUpon>
@@ -234,7 +236,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\AssetGroups\" />
     <Folder Include="Views\Assets\" />
+    <Folder Include="Views\Departments\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
