@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KazanSession1Api_31_07_2020", "KazanSession1Api_31_07_2020.csproj", "{659F09C0-8A57-4296-A98E-1DE625426177}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{659F09C0-8A57-4296-A98E-1DE625426177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{659F09C0-8A57-4296-A98E-1DE625426177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{659F09C0-8A57-4296-A98E-1DE625426177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{659F09C0-8A57-4296-A98E-1DE625426177}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B7FACE5-4C41-4CDD-9005-300268D9E737}
+	EndGlobalSection
+EndGlobal
